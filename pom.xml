@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.cucumber</groupId>
+    <artifactId>TestProjectCucumber</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+        <!-- Cucumber Java -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>7.18.1</version>
+        </dependency>
+
+        <!-- Cucumber PicoContainer (for Dependency Injection) -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-picocontainer</artifactId>
+            <version>7.18.1</version>
+        </dependency>
+
+        <!-- Cucumber TestNG -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>7.18.1</version>
+        </dependency>
+
+        <!-- Selenium Chrome Driver -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-chrome-driver</artifactId>
+            <version>4.23.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Extent Reports -->
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>5.1.2</version>
+        </dependency>
+
+        <!-- Extent Reports Cucumber Adapter -->
+        <dependency>
+            <groupId>tech.grasshopper</groupId>
+            <artifactId>extentreports-cucumber7-adapter</artifactId>
+            <version>1.14.0</version>
+        </dependency>
+
+        <!-- Apache Commons IO (for file operations) -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.11.0</version>
+        </dependency>
+
+<!--        &lt;!&ndash; SLF4J API &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.slf4j</groupId>-->
+<!--            <artifactId>slf4j-api</artifactId>-->
+<!--            <version>2.0.9</version>-->
+<!--        </dependency>-->
+
+<!--        &lt;!&ndash; Log4j 2 SLF4J Bridge &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.logging.log4j</groupId>-->
+<!--            <artifactId>log4j-slf4j2-impl</artifactId>-->
+<!--            <version>2.20.0</version>-->
+<!--        </dependency>-->
+
+<!--        &lt;!&ndash; Log4j 2 Core &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.logging.log4j</groupId>-->
+<!--            <artifactId>log4j-core</artifactId>-->
+<!--            <version>2.20.0</version>-->
+<!--        </dependency>-->
+
+<!--        &lt;!&ndash; Log4j 2 API &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.logging.log4j</groupId>-->
+<!--            <artifactId>log4j-api</artifactId>-->
+<!--            <version>2.20.0</version>-->
+<!--        </dependency>-->
+
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.maven.plugins</groupId>-->
+<!--            <artifactId>maven-surefire-plugin</artifactId>-->
+<!--            <version>3.5.0</version>-->
+<!--        </dependency>-->
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.5.0</version>
+                <configuration>
+                    <includes>
+                        <include>**/Runner.java</include>
+                    </includes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+    <properties>
+        <maven.compiler.source>16</maven.compiler.source>
+        <maven.compiler.target>16</maven.compiler.target>
+    </properties>
+</project>

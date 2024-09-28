@@ -1,0 +1,13 @@
+C:\TestProjectCucumber\src\test\java\pageObjects\CheckOutPage.java
+C:\TestProjectCucumber\src\test\java\pageObjects\LandingPage.java
+C:\TestProjectCucumber\src\test\java\pageObjects\OffersPage.java
+C:\TestProjectCucumber\src\test\java\pageObjects\PageObjectManager.java
+C:\TestProjectCucumber\src\test\java\StepDefinitions\CheckOutPageSteps.java
+C:\TestProjectCucumber\src\test\java\StepDefinitions\Hooks.java
+C:\TestProjectCucumber\src\test\java\StepDefinitions\LandingPageSteps.java
+C:\TestProjectCucumber\src\test\java\StepDefinitions\OfferPageSteps.java
+C:\TestProjectCucumber\src\test\java\TestRunner\FailedTestRunner.java
+C:\TestProjectCucumber\src\test\java\TestRunner\Runner.java
+C:\TestProjectCucumber\src\test\java\Utils\GenericUtils.java
+C:\TestProjectCucumber\src\test\java\Utils\TestBase.java
+C:\TestProjectCucumber\src\test\java\Utils\TestContextSetUp.java
