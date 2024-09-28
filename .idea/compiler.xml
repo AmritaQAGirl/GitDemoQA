@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="GitDemoQA" />
         <module name="TestProjectCucumber" />
+        <module name="GitStuff" />
       </profile>
     </annotationProcessing>
   </component>
